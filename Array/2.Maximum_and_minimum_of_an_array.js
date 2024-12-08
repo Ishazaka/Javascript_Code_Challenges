@@ -42,6 +42,23 @@ Main(minmax);
 // 2 0(n) --> O(n)
 
 
+// 2nd Way
+// Maximum and minimum of an array using Sorting:
+
+let minmax2 = [4, 9, 6, 5, 2, 3];
+
+function bySort(val) {
+  val.sort((a, b) => a - b);
+
+  let min = val[0];
+  let max = val[val.length - 1];
+  console.log(min);
+  console.log(max);
+}
+
+bySort(minmax2);
+
+// O(n log n) for built-in sort method
 
 
 
